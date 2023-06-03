@@ -28,17 +28,18 @@ const agent = new Agent({
   config,
   dependencies: agentDependencies,
   modules: {
+    // Register the `CheqdDidRegistrar` and `CheqdDidResolver` on the `DidsModule`
     dids: new DidsModule({
       registrars: [new CheqdDidRegistrar()],
       resolvers: [new CheqdDidResolver()],
     }),
 
-    // AnonCreds
+    // Register the `CheqdAnonCredsRegistry` on the `AnonCredsModule`
     anoncreds: new AnonCredsModule({
       registries: [new CheqdAnonCredsRegistry()],
     }),
 
-    // Add cheqd module
+    // Register the `CheqdModule` to configure the networks and the cosmos payer
     cheqd: new CheqdModule(
       new CheqdModuleConfig({
         networks: [
@@ -49,7 +50,7 @@ const agent = new Agent({
         ],
       })
     ),
-    // Indy VDR can optionally be used with Askar as wallet and storage implementation
+    // Askar as wallet and storage implementation
     askar: new AskarModule({
       ariesAskar,
     }),

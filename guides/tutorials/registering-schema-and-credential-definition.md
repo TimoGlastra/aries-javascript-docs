@@ -35,7 +35,7 @@ We recommend [bcovrin test net](http://test.bcovrin.vonx.io/). This network allo
 
 #### Cheqd
 
-Follow the [cheqd setup](../getting-started//set-up/cheqd/index.md) and [cheqd DID module](./cheqd/index.md) to setup the network and create a DID. Cheqd supports a mainnet for production and a testnet for development purposes.
+Follow the [cheqd setup](../modules/cheqd.md) and [cheqd DID module](./cheqd.md) to setup the network and create a DID. Cheqd supports a mainnet for production and a testnet for development purposes.
 
 :::
 

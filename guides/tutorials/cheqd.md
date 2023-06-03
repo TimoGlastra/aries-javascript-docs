@@ -6,8 +6,8 @@ In this tutorial we will see how to use the cheqd modules in detail
 
 This section assumes that
 
-1. You have [set-up your develoment environment](../../getting-started).
-2. You have setup the cheqd module [setup cheqd](../../getting-started/set-up/cheqd/index.md)
+1. You have [set-up your development environment](../../getting-started).
+2. You have setup the cheqd module [setup cheqd](../modules/cheqd.md)
 
 :::
 
